@@ -17,6 +17,9 @@ I_spin = 3 # Electronic spin degeneracy of O2 molecule
 B_0 = 0.18/1000*1.6022e-19 # Rotational constant in J
 omega_0 = 4.739261388e13 # s^-1; tabulated at: 0.196 eV; corresponds to 4.739261388e13 Hz frequency
 
+def print_constants():
+    print("kb = ",kb," J/K\n","B_0 = ",B_0," J\n","omega_0 = ",omega_0," J\n","h = ",h," J*s\n","p_0 =",p_0, "Pa\n","m = ",m," kg\n","sigma_sym = ",sigma_sym,"\n ","I_spin = ",I_spin, "\n")
+
 
 def oxygen_delta_mu_0(T,p=p_0):
     '''

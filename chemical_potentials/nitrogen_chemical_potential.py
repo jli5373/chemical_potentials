@@ -17,6 +17,8 @@ I_spin = 1 # Electronic spin degeneracy of N2 molecule NOTE: ISPIN=1 for N2
 B_0 = 3.97212135e-23 # Rotational constant in J, JANAF tables list B_e = 1.99825 cm^-1 (N2)
 omega_0 = 7.07265e13 # s^-1; tabulated at: 0.196 eV; corresponds to xx Hz frequency; JANAF tables list w_e = 2357.55 cm^-1 (N2)
 
+def print_constants():
+    print("kb = ",kb," J/K\n","B_0 = ",B_0," J\n","omega_0 = ",omega_0," J\n","h = ",h," J*s\n","p_0 =",p_0, "Pa\n","m = ",m," kg\n","sigma_sym = ",sigma_sym,"\n ","I_spin = ",I_spin, "\n")
 
 def _nitrogen_delta_mu_0(T,p=p_0):
     '''
